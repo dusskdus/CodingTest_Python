@@ -1,6 +1,6 @@
 def solution(m, n, board):
     for i in range(m):
-        board[i] = list(board[i])
+        board[i] = list(board[i]) #각각을 리스트에 넣어주기
     
     cnt = 0
     rm = set()
@@ -12,8 +12,10 @@ def solution(m, n, board):
                 if t == []:
                     continue
                 if board[i+1][j] == t and board[i][j+1] == t and board[i+1][j+1] == t:
-                    rm.add((i,j));rm.add((i+1,j))
-                    rm.add((i,j+1));rm.add((i+1,j+1))
+                    rm.add((i,j))
+                    rm.add((i+1,j))
+                    rm.add((i,j+1))
+                    rm.add((i+1,j+1))
         
         # 좌표가 존재한다면 집합의 길이만큼 세주고 블록을 지움 
         if rm:
