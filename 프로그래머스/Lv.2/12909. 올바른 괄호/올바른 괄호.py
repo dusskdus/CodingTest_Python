@@ -13,6 +13,9 @@ def solution(s):
                 return False
             else:
                 stack.pop()
-
+    
+    if stack != []:
+        return False
                 
-    return len(stack) == 0
+    return True
+
