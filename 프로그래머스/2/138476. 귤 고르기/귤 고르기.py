@@ -14,8 +14,8 @@ def solution(k, tangerine):
             dic[i]=1
     dic = dict(sorted(dic.items(), key=lambda x: x[1], reverse=True))
     for i in dic:
-         if k<=0:
+        if k<=0:
             return answer
-         k-=dic[i]
-         answer+=1
+        k-=dic[i]
+        answer+=1
     return answer
