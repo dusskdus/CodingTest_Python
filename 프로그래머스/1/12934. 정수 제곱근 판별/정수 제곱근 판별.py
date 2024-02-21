@@ -7,6 +7,6 @@ import math
 def solution(n):
     x = math.sqrt(float(n))
     if int(x) == x:
-        return (x+1)*(x+1)
+        return (x+1)**2
     else:
         return -1
