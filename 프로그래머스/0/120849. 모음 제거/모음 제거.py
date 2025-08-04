@@ -1,7 +1,8 @@
 def solution(my_string):
     answer = ''
-    mo = ['a', 'e', 'i', 'o', 'u']
-    for my in my_string:
-        if my in mo:
-            my_string=my_string.replace(my,"")
-    return my_string
+    moum = ["a","e","i","o","u"]
+    for i in my_string:
+        if i not in moum:
+            answer += i
+            
+    return answer
